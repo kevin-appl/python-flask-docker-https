@@ -2,6 +2,8 @@
 
 Sample for building a web application with Python3, Flask, Gunicorn, Nginx (HTTPS) and Docker.
 
+Flask's built-in server is not suitable for production. Therefore, we deploy our Flask application to Gunicorn (WSGI server). Gunicorn is best used behind a proxy. In our case, we use NGINX as a reverse proxy.
+
 ![overview](https://user-images.githubusercontent.com/105594559/169369472-879dcac5-fc81-4953-9a75-385061bf2210.png)
 
 
@@ -32,4 +34,3 @@ docker compose up
 ```
 
 Open in web browser: https://127.0.0.1
-
