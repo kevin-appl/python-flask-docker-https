@@ -1,4 +1,4 @@
-# python-flask-sample
+# python-flask-docker-https
 
 Sample for building a web application with Python3, Flask, Gunicorn, Nginx (HTTPS) and Docker.
 
