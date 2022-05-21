@@ -1,0 +1,22 @@
+#!/bin/bash -v
+#
+# This script resets your docker installation on Linux to factory defaults.
+# To restart the docker service, this script requires root privileges.
+#
+
+# Remove all containers.
+docker rm -vf $(docker container ls -a -q)
+
+# Remove all images.
+docker rmi -f $(docker image ls -a -q)
+
+# Remove all networks, cache and unused data (note: volumes won't be removed).
+yes | docker system prune
+
+# Remove all volumes.
+yes | docker volume prune
+
+# Restart docker service.
+service docker restart
+
+# Done!

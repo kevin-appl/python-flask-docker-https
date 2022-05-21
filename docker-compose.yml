@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+
+  flask:
+    build: ./flask
+    container_name: flask
+    expose: 
+      - 8080
+
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ${SSL_DIR}:/etc/nginx/ssl
+
