@@ -2,7 +2,7 @@
 
 Sample for building a web application with Python3, Flask, Gunicorn, Nginx (HTTPS) and Docker.
 
-Please note: This project is primarily for developers who want to learn how to build a web application using Flask and Docker.
+Please note: This project is a playground and is intended for learning.
 
 ![overview](https://user-images.githubusercontent.com/105594559/169369472-879dcac5-fc81-4953-9a75-385061bf2210.png)
 
