@@ -24,7 +24,7 @@ Now generate a self-signed SSL certificate (cert.pem, key.pem):
 openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365
 ```
 
-By default, the Nginx in this project wants a SSL certificate stored in `/var/ssl` on your local machine. You can move your generated `cert.pem` and `key.pem` file there. 
+By default, the Nginx server in this project wants a SSL certificate stored in `/var/ssl` on your local machine. You can move your generated `cert.pem` and `key.pem` file there. 
 
 If you prefer to use a different directory (for example, because you are on Windows), you can change it. Simply open the file `.env` and replace /var/ssl with your preferred directory.
 
